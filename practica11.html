@@ -17,8 +17,8 @@ src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
 <body>
 <div id="map"></div>
 <script type="text/javascript">
-function onEachFeature(Feature, layer) {
-layer.bindPopup(Feature.properties.Nombre);
+function onEachFeature(feature, layer) {
+layer.bindPopup(feature.properties.nombre);
 };
 var xhr = new XMLHttpRequest();
 xhr.open("GET","avenidas.geojson",false);

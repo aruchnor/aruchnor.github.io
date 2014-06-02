@@ -3,21 +3,22 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <title>Mapa Web</title>
 <link rel="stylesheet"
-href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css"/>
+href="leaflet.css"/>
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/
 3.0.2/css/font-awesome.css">
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="http://cdn.leafletjs.com/
 leaflet-0.5/leaflet.ie.css" />
 <![endif]-->
-<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+<script src="leaflet.js"></script>
 <script
 src="https://raw.github.com/lvoogdt/Leaflet.awesome-markers/
 master/dist/leaflet.awesome-markers.js"></script>
 <style type="text/css">
 #map { width: 600px; height: 400px }
 .awesome-marker {
-background: url("https://rawgithub.com/lvoogdt/Leaflet.awesome-markers/master/dist/images/markers-soft.png") no-repeat 0 0;
+background: url("https://raw.github.com/lvoogdt/Leaflet.awesome-markers/
+master/dist/images/markers-soft.png") no-repeat 0 0;
 width: 35px; height: 46px;
 position:absolute;
 left:0; top:0;
@@ -25,14 +26,15 @@ display: block;
 text-align: center;
 }
 .awesome-marker-shadow {
-background: url("https://rawgithub.com/lvoogdt/Leaflet.awesome-markers/master/dist/images/markers-shadow.png") no-repeat 0 0;
+background: url("https://raw.github.com/lvoogdt/Leaflet.awesome-markers/
+master/dist/images/markers-shadow.png") no-repeat 0 0;
 width: 36px; height: 16px;
 }
 .awesome-marker i {
 color: #333; margin-top: 10px;
 display: inline-block; font-size: 14px;
 }
-.awesome-marker-icon-white { color: #fff; }
+.awesome-marker .icon-white { color: #fff; }
 .awesome-marker-icon-red { background-position: 0 0; }
 .awesome-marker-icon-darkred { background-position: -180px 0; }
 .awesome-marker-icon-orange { background-position: -36px 0; }
@@ -53,26 +55,22 @@ icon: "food",
 color: "green",
 iconColor: "black"
 });
-
 function onEachFeature(feature, layer) {
-layer.bindPopup(feature.properties.Nombre);
+layer.bindPopup(feature.properties.nombre);
 };
-
 function pointToLayer(feature, latlng) {
 return L.marker(latlng, {icon: redMarker});
 };
-
-var xhr = new XMLHttpRequest() || new ActiveXObject("Msxml2.XMLHTTP") 
+var xhr = new XMLHttpRequest() || new ActiveXObject("Msxml2.XMLHTTP")
 || new ActiveXObject("Microsoft.XMLHTTP");
-xhr.open("GET","avenidas.geojson",false); xhr.send(null);
-var data = JSON.parse(xhr.responseText);
 xhr.open("GET","calles.geojson",false); xhr.send(null);
 var calles = JSON.parse(xhr.responseText);
+xhr.open("GET","avenidas.geojson",false); xhr.send(null);
+var avenidas = JSON.parse(xhr.responseText);
 xhr.open("GET","edificios.geojson",false); xhr.send(null);
 var edificios = JSON.parse(xhr.responseText);
 xhr.open("GET","quedradas.geojson",false); xhr.send(null);
-var quedradas = JSON.parse(xhr.responseText);
-
+var quebrada = JSON.parse(xhr.responseText);
 var styleLineas = {
 "color": "#999999",
 "weight": 2,
@@ -83,26 +81,32 @@ var stylePoligonos = {
 "weight": 1,
 "opacity": 0.65
 };
-var avenidas = L.geoJson(data, {style: styleLineas, onEachFeature: onEachFeature});
-var calles = L.geoJson(data1, {style: styleLineas, onEachFeature: onEachFeature});
-var edificios = L.geoJson(data2, {style: stylePoligonos, onEachFeature: onEachFeature});
-var quedradas = L.geoJson(data3, {style: stylePoligonos, onEachFeature: onEachFeature});
+var lineasLayer = L.geoJson(calles, {
+style: styleLineas, onEachFeature: onEachFeature
+});
+var lineas2Layer = L.geoJson(avenidas, {
+style: styleLineas, onEachFeature: onEachFeature
+});
+var poligonosLayer = L.geoJson(edificios, {
+style: stylePoligonos, onEachFeature: onEachFeature
+});
+var quebradaLayer = L.geoJson(quebrada, {
+style: styleLineas, onEachFeature: onEachFeature
+});
 
 var map = L.map("map", {
 center: new L.LatLng(9.929049309716555,-84.079599659843965),
 zoom: 16,
-layers: [avenidas, calles, edificios,quedradas]
+layers: [lineasLayer, lineas2Layer, poligonosLayer, quebradaLayer]
 });
-
 var overlayMaps = {
-"avenidas": avenidas,
-"calles": calles,
-"Edificios": edificios,
-"Quebradas": quedradas
+"Avenidas": lineas2Layer,
+"Calles": lineasLayer,
+"Edificios": poligonosLayer,
+"Quebrada": quebradaLayer
+
 };
-
-L.control.layers(null,overlayMaps).addTo(map);
-
+L.control.layers(null, overlayMaps).addTo(map);
 </script>
 </body>
 </html>
