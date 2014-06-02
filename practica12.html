@@ -56,7 +56,7 @@ color: "green",
 iconColor: "black"
 });
 function onEachFeature(feature, layer) {
-layer.bindPopup(feature.properties.Nombre);
+layer.bindPopup(feature.properties.nombre);
 };
 function pointToLayer(feature, latlng) {
 return L.marker(latlng, {icon: redMarker});
