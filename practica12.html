@@ -56,19 +56,21 @@ color: "green",
 iconColor: "black"
 });
 function onEachFeature(feature, layer) {
-layer.bindPopup(feature.properties.nombre);
+layer.bindPopup(feature.properties.Nombre);
 };
 function pointToLayer(feature, latlng) {
 return L.marker(latlng, {icon: redMarker});
 };
 var xhr = new XMLHttpRequest() || new ActiveXObject("Msxml2.XMLHTTP")
 || new ActiveXObject("Microsoft.XMLHTTP");
+xhr.open("GET","lugares.geojson",false); xhr.send(null);
+var puntos = JSON.parse(xhr.responseText);
 xhr.open("GET","calles.geojson",false); xhr.send(null);
-var calles = JSON.parse(xhr.responseText);
+var lineas = JSON.parse(xhr.responseText);
 xhr.open("GET","avenidas.geojson",false); xhr.send(null);
-var avenidas = JSON.parse(xhr.responseText);
+var lineas2 = JSON.parse(xhr.responseText);
 xhr.open("GET","edificios.geojson",false); xhr.send(null);
-var edificios = JSON.parse(xhr.responseText);
+var poligonos = JSON.parse(xhr.responseText);
 xhr.open("GET","quedradas.geojson",false); xhr.send(null);
 var quebrada = JSON.parse(xhr.responseText);
 var styleLineas = {
@@ -81,15 +83,19 @@ var stylePoligonos = {
 "weight": 1,
 "opacity": 0.65
 };
-var lineasLayer = L.geoJson(calles, {
+var puntosLayer = L.geoJson(puntos, {
+pointToLayer: pointToLayer, onEachFeature: onEachFeature
+});
+var lineasLayer = L.geoJson(lineas, {
 style: styleLineas, onEachFeature: onEachFeature
 });
-var lineas2Layer = L.geoJson(avenidas, {
+var lineas2Layer = L.geoJson(lineas2, {
 style: styleLineas, onEachFeature: onEachFeature
 });
-var poligonosLayer = L.geoJson(edificios, {
+var poligonosLayer = L.geoJson(poligonos, {
 style: stylePoligonos, onEachFeature: onEachFeature
 });
+
 var quebradaLayer = L.geoJson(quebrada, {
 style: styleLineas, onEachFeature: onEachFeature
 });
@@ -97,11 +103,12 @@ style: styleLineas, onEachFeature: onEachFeature
 var map = L.map("map", {
 center: new L.LatLng(9.929049309716555,-84.079599659843965),
 zoom: 16,
-layers: [lineasLayer, lineas2Layer, poligonosLayer, quebradaLayer]
+layers: [puntosLayer, lineasLayer, lineas2Layer, poligonosLayer, quebradaLayer]
 });
 var overlayMaps = {
-"Avenidas": lineas2Layer,
+"Restaurantes": puntosLayer,
 "Calles": lineasLayer,
+"Avenidas": lineas2Layer,
 "Edificios": poligonosLayer,
 "Quebrada": quebradaLayer
 
