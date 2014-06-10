@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "id": 3, "nombre": "Iglesia del Nazareno de Tibás", "tipo": "Iglesia", "cat": 192, "NDISTRITO": "SAN JUAN" }, "geometry": { "type": "Point", "coordinates": [ -84.067819690900535, 9.964747560204192 ] } },
+{ "type": "Feature", "properties": { "id": 5, "nombre": "Iglesia San Judas Tadeo", "tipo": "Iglesia", "cat": 192, "NDISTRITO": "SAN JUAN" }, "geometry": { "type": "Point", "coordinates": [ -84.083239848083124, 9.967713854700694 ] } },
+{ "type": "Feature", "properties": { "id": 7, "nombre": "Parroquia Llorente", "tipo": "Iglesia", "cat": 203, "NDISTRITO": "ANSELMO LLORENTE" }, "geometry": { "type": "Point", "coordinates": [ -84.065348826377459, 9.960620381004979 ] } },
+{ "type": "Feature", "properties": { "id": 16, "nombre": "Iglesia de Tibás", "tipo": "Iglesia", "cat": 192, "NDISTRITO": "SAN JUAN" }, "geometry": { "type": "Point", "coordinates": [ -84.077911530829041, 9.961861041792455 ] } },
+{ "type": "Feature", "properties": { "id": 24, "nombre": "Iglesia Cuatro Reinas", "tipo": "Iglesia", "cat": 355, "NDISTRITO": "COLIMA" }, "geometry": { "type": "Point", "coordinates": [ -84.093181876903813, 9.961463167463608 ] } },
+{ "type": "Feature", "properties": { "id": 32, "nombre": "Iglesia de Colima", "tipo": "Iglesia", "cat": 355, "NDISTRITO": "COLIMA" }, "geometry": { "type": "Point", "coordinates": [ -84.082620205413519, 9.95525067059442 ] } },
+{ "type": "Feature", "properties": { "id": 31, "nombre": "Iglesia Cinco Esquinas", "tipo": "Iglesia", "cat": 351, "NDISTRITO": "CINCO ESQUINAS" }, "geometry": { "type": "Point", "coordinates": [ -84.080070854927754, 9.946064029519924 ] } }
+]
+}

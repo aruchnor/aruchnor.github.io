@@ -1,0 +1,38 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 1, "id": 9, "nombre": "Erasmo", "tipo": "Restaurante", "banco": 1 }, "geometry": { "type": "Point", "coordinates": [ -84.067883598054792, 9.96202744459108 ] } },
+{ "type": "Feature", "properties": { "cat": 2, "id": 8, "nombre": "Rostipollos", "tipo": "Restaurante", "banco": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.065880758192449, 9.962026141225991 ] } },
+{ "type": "Feature", "properties": { "cat": 3, "id": 12, "nombre": "Porto Belo", "tipo": "Restaurante", "banco": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.070500164980686, 9.961942432067499 ] } },
+{ "type": "Feature", "properties": { "cat": 4, "id": 11, "nombre": "Tumi's House", "tipo": "Restaurante", "banco": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.070225092609306, 9.961922038100759 ] } },
+{ "type": "Feature", "properties": { "cat": 5, "id": 13, "nombre": "Subway", "tipo": "Restaurante", "banco": 1 }, "geometry": { "type": "Point", "coordinates": [ -84.073680658461512, 9.962030370663664 ] } },
+{ "type": "Feature", "properties": { "cat": 6, "id": 15, "nombre": "Taco Bell", "tipo": "Restaurante", "banco": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.074629697460438, 9.962268765487506 ] } },
+{ "type": "Feature", "properties": { "cat": 7, "id": 14, "nombre": "Mc Donald's", "tipo": "Restaurante", "banco": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.074272096403959, 9.962214306785979 ] } },
+{ "type": "Feature", "properties": { "cat": 8, "id": 16, "nombre": "Burger King", "tipo": "Restaurante", "banco": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.076359151752996, 9.962108168137005 ] } },
+{ "type": "Feature", "properties": { "cat": 9, "id": 17, "nombre": "Baco Vaca", "tipo": "Restaurante", "banco": 1 }, "geometry": { "type": "Point", "coordinates": [ -84.077143105437827, 9.962148891827162 ] } },
+{ "type": "Feature", "properties": { "cat": 10, "id": 20, "nombre": "TicoBurguesas", "tipo": "Restaurante", "banco": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.078233572538494, 9.960679936363755 ] } },
+{ "type": "Feature", "properties": { "cat": 11, "id": 22, "nombre": "Soda Tikal", "tipo": "Restaurante", "banco": 1 }, "geometry": { "type": "Point", "coordinates": [ -84.078378326009513, 9.962118352552713 ] } },
+{ "type": "Feature", "properties": { "cat": 12, "id": 23, "nombre": "Pizza Hut", "tipo": "Restaurante", "banco": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.078205497668918, 9.958293887963968 ] } },
+{ "type": "Feature", "properties": { "cat": 13, "id": 25, "nombre": "Charlies Pizza", "tipo": "Restaurante", "banco": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.075977405753108, 9.958008075288458 ] } },
+{ "type": "Feature", "properties": { "cat": 14, "id": 26, "nombre": "Casa Pasta", "tipo": "Restaurante", "banco": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.078521488222634, 9.956896267239552 ] } },
+{ "type": "Feature", "properties": { "cat": 15, "id": 28, "nombre": "Restaurante Zonni", "tipo": "Restaurante", "banco": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.078105190930231, 9.952171974524235 ] } },
+{ "type": "Feature", "properties": { "cat": 16, "id": 27, "nombre": "POPS", "tipo": "Restaurante", "banco": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.078531587322601, 9.952396845652526 ] } },
+{ "type": "Feature", "properties": { "cat": 17, "id": 32, "nombre": "Los Cipreses", "tipo": "Restaurante", "banco": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.06213295658867, 9.964375136477649 ] } },
+{ "type": "Feature", "properties": { "cat": 18, "id": 37, "nombre": "Hong Xin", "tipo": "Restaurante", "banco": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.067016186611937, 9.962081704996615 ] } },
+{ "type": "Feature", "properties": { "cat": 19, "id": 36, "nombre": "Pizza Mia", "tipo": "Restaurante", "banco": 1 }, "geometry": { "type": "Point", "coordinates": [ -84.068568612815838, 9.962097421357179 ] } },
+{ "type": "Feature", "properties": { "cat": 20, "id": 41, "nombre": "La orquidea dorada", "tipo": "Restaurante", "banco": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.077543163103911, 9.960428195441132 ] } },
+{ "type": "Feature", "properties": { "cat": 21, "id": 40, "nombre": "Jerry Pizza", "tipo": "Restaurante", "banco": 1 }, "geometry": { "type": "Point", "coordinates": [ -84.077494858226416, 9.961309932500942 ] } },
+{ "type": "Feature", "properties": { "cat": 22, "id": 49, "nombre": "Mi Tablita Campesina", "tipo": "Restaurante", "banco": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.06892414756814, 9.961007214261445 ] } },
+{ "type": "Feature", "properties": { "cat": 23, "id": 38, "nombre": "Bramasole", "tipo": "Restaurante", "banco": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.064428286650255, 9.959388941662374 ] } },
+{ "type": "Feature", "properties": { "cat": 24, "id": 47, "nombre": "Hobbies", "tipo": "Restaurante", "banco": 1 }, "geometry": { "type": "Point", "coordinates": [ -84.086107047103766, 9.965564153585268 ] } },
+{ "type": "Feature", "properties": { "cat": 25, "id": 39, "nombre": "Feliz", "tipo": "Restaurante", "banco": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.075740528870554, 9.962296264606112 ] } },
+{ "type": "Feature", "properties": { "cat": 26, "id": 62, "nombre": "Rincón Poblano", "tipo": "Restaurante", "banco": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.085781900900756, 9.95897534226483 ] } },
+{ "type": "Feature", "properties": { "cat": 27, "id": 60, "nombre": "Pupuseria Myra", "tipo": "Restaurante", "banco": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.079119484732672, 9.958976986042476 ] } },
+{ "type": "Feature", "properties": { "cat": 28, "id": 58, "nombre": "Gran Oriente", "tipo": "Restaurante", "banco": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.078278868470036, 9.960115411995291 ] } },
+{ "type": "Feature", "properties": { "cat": 29, "id": 57, "nombre": "POPS", "tipo": "Restaurante", "banco": 1 }, "geometry": { "type": "Point", "coordinates": [ -84.078214474783806, 9.96133381188041 ] } },
+{ "type": "Feature", "properties": { "cat": 30, "id": 56, "nombre": "Jerry Rizz", "tipo": "Restaurante", "banco": 1 }, "geometry": { "type": "Point", "coordinates": [ -84.077632313879946, 9.96131791627883 ] } },
+{ "type": "Feature", "properties": { "cat": 31, "id": 52, "nombre": "Pizza Oliver", "tipo": "Restaurante", "banco": 1 }, "geometry": { "type": "Point", "coordinates": [ -84.084343620320482, 9.962598799491351 ] } }
+]
+}

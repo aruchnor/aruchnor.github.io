@@ -1,0 +1,29 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 1, "id": 11, "nombre": "Parada Burger King Tibás", "tipo": "Parada de Bus", "telefono": 151 }, "geometry": { "type": "Point", "coordinates": [ -84.076355754622412, 9.962285418690007 ] } },
+{ "type": "Feature", "properties": { "cat": 2, "id": 10, "nombre": "Parada Mc Donald's Tibás", "tipo": "Parada de Bus", "telefono": 127 }, "geometry": { "type": "Point", "coordinates": [ -84.074155190108755, 9.962204106806977 ] } },
+{ "type": "Feature", "properties": { "cat": 3, "id": 14, "nombre": "Parada Iglesia de Tibás", "tipo": "Parada de Bus", "telefono": 137 }, "geometry": { "type": "Point", "coordinates": [ -84.078297450787915, 9.961808184417098 ] } },
+{ "type": "Feature", "properties": { "cat": 4, "id": 20, "nombre": "Parada Servicio Coopetaxi", "tipo": "Parada de Bus", "telefono": 101 }, "geometry": { "type": "Point", "coordinates": [ -84.078651345481276, 9.953562576233608 ] } },
+{ "type": "Feature", "properties": { "cat": 5, "id": 22, "nombre": "Parada POPS", "tipo": "Parada de Bus", "telefono": 101 }, "geometry": { "type": "Point", "coordinates": [ -84.078655374090417, 9.952437720374958 ] } },
+{ "type": "Feature", "properties": { "cat": 6, "id": 33, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 31 }, "geometry": { "type": "Point", "coordinates": [ -84.065302305684625, 9.963352531377485 ] } },
+{ "type": "Feature", "properties": { "cat": 7, "id": 32, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 31 }, "geometry": { "type": "Point", "coordinates": [ -84.062618037891937, 9.964090488881338 ] } },
+{ "type": "Feature", "properties": { "cat": 8, "id": 46, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 31 }, "geometry": { "type": "Point", "coordinates": [ -84.064460628530085, 9.95938893542524 ] } },
+{ "type": "Feature", "properties": { "cat": 9, "id": 45, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 71 }, "geometry": { "type": "Point", "coordinates": [ -84.067338319598747, 9.955797337539451 ] } },
+{ "type": "Feature", "properties": { "cat": 10, "id": 44, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 76 }, "geometry": { "type": "Point", "coordinates": [ -84.071623361691806, 9.95483456370636 ] } },
+{ "type": "Feature", "properties": { "cat": 11, "id": 43, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 66 }, "geometry": { "type": "Point", "coordinates": [ -84.06876116212014, 9.954915321587935 ] } },
+{ "type": "Feature", "properties": { "cat": 12, "id": 42, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 76 }, "geometry": { "type": "Point", "coordinates": [ -84.069278679184833, 9.955171716945078 ] } },
+{ "type": "Feature", "properties": { "cat": 13, "id": 41, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 71 }, "geometry": { "type": "Point", "coordinates": [ -84.066319804290771, 9.956999895193357 ] } },
+{ "type": "Feature", "properties": { "cat": 14, "id": 40, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 31 }, "geometry": { "type": "Point", "coordinates": [ -84.064525365834697, 9.959661456470995 ] } },
+{ "type": "Feature", "properties": { "cat": 15, "id": 51, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 69 }, "geometry": { "type": "Point", "coordinates": [ -84.07621602996285, 9.955635117481833 ] } },
+{ "type": "Feature", "properties": { "cat": 16, "id": 50, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 69 }, "geometry": { "type": "Point", "coordinates": [ -84.078415095174336, 9.954977322125179 ] } },
+{ "type": "Feature", "properties": { "cat": 17, "id": 52, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 97 }, "geometry": { "type": "Point", "coordinates": [ -84.080549268328724, 9.953501927364041 ] } },
+{ "type": "Feature", "properties": { "cat": 18, "id": 55, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 128 }, "geometry": { "type": "Point", "coordinates": [ -84.078530018847417, 9.9622074479585 ] } },
+{ "type": "Feature", "properties": { "cat": 19, "id": 56, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 140 }, "geometry": { "type": "Point", "coordinates": [ -84.085257164125323, 9.962125642037462 ] } },
+{ "type": "Feature", "properties": { "cat": 20, "id": 54, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 140 }, "geometry": { "type": "Point", "coordinates": [ -84.085871744329495, 9.962430080749781 ] } },
+{ "type": "Feature", "properties": { "cat": 21, "id": 57, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 179 }, "geometry": { "type": "Point", "coordinates": [ -84.079386512136296, 9.959834601538191 ] } },
+{ "type": "Feature", "properties": { "cat": 22, "id": 58, "nombre": "Parada de Bus", "tipo": "Parada de Bus", "telefono": 96 }, "geometry": { "type": "Point", "coordinates": [ -84.084640928414842, 9.955392619766384 ] } }
+]
+}
