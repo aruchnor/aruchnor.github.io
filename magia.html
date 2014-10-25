@@ -88,7 +88,7 @@
             }
 
             //stream publish method
-            function streamPublish(name, description, hrefTitle, hrefLink, userPrompt){
+            function streamPublish(name, description ){
                 showLoader(true);
                 FB.ui(
                 {
@@ -98,12 +98,9 @@
                         name: name,
                         caption: '',
                         description: (description),
-                        href: hrefLink
+   
                     },
-                    action_links: [
-                        { text: hrefTitle, href: hrefLink }
-                    ],
-                    user_prompt_message: userPrompt
+
                 },
                 function(response) {
                     showLoader(false);
@@ -114,7 +111,7 @@
             function showStream(){
                 FB.api('/me', function(response) {
                     //console.log(response.id);
-                    streamPublish(response.name, 'I like the articles of Thinkdiff.net', 'hrefTitle', 'http://thinkdiff.net', "Share thinkdiff.net");
+                    streamPublish(response.name, 'sTREEm');
                 });
             }
 			
