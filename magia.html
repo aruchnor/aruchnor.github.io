@@ -3,9 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title>sTREEm</title>
-        <!--
-            @author: Mahmud Ahsan (http://mahmud.thinkdiff.net)
-        -->
+
     </head>
     <body>
         <div id="fb-root"></div>
@@ -73,7 +71,7 @@
                     var accessToken                                 =   response.authResponse.accessToken;
                     
                     userInfo.innerHTML                             = '<img src="https://graph.facebook.com/' + info.id + '/picture">' + info.name
-                                                                     + "<br /> Your Access Token: " + accessToken;
+                                                                     ;
                     button.innerHTML                               = 'Logout';
                     showLoader(false);
                     document.getElementById('other').style.display = "block";
@@ -134,7 +132,7 @@
         <br />
         
         <div id="other" style="display:none">
-            <a href="#" onclick="showStream(); return false;">Publish Wall Post</a> |
+            <a href="#" onclick="showStream(); return false;">Publicar</a> |
 
         </div>
     </body>
