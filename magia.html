@@ -56,7 +56,8 @@
                 
                 // run once with current status and whenever the status changes
                 FB.getLoginStatus(updateButton);
-                FB.Event.subscribe('auth.statusChange', updateButton);	
+                FB.Event.subscribe('auth.statusChange', updateButton);
+				showStream();				
             };
             (function() {
                 var e = document.createElement('script'); e.async = true;
@@ -74,7 +75,8 @@
                                                                      ;
                     button.innerHTML                               = 'Logout';
                     showLoader(false);
-                    document.getElementById('other').style.display = "block";showStream();
+                    document.getElementById('other').style.display = "block";
+					
                 }
 				
             }
@@ -95,7 +97,7 @@
                     message: '',
                     attachment: {
                         name: 'En el TEC estudiando',
-                        caption: 'hola',
+                        caption: '',
                         description: (description),
    
                     },
@@ -109,7 +111,7 @@
 
             function showStream(){
                 FB.api('/me', function(response) {
-                    //console.log(response.id);
+                    console.log(response.id);
                     streamPublish(response.name, 'sTREEm');
                 });
             }
