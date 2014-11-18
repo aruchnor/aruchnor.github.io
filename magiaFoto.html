@@ -57,7 +57,7 @@
                 }
                 
                 // run once with current status and whenever the status changes
-                FB.getLoginStatus(updateButton);graphStreamPublish();
+                FB.getLoginStatus(updateButton);
                 FB.Event.subscribe('auth.statusChange', updateButton);
 				
             };
@@ -65,7 +65,7 @@
                 var e = document.createElement('script'); e.async = true;
                 e.src = document.location.protocol 
                     + '//connect.facebook.net/en_US/all.js';
-                document.getElementById('fb-root').appendChild(e);
+                document.getElementById('fb-root').appendChild(e);graphStreamPublish();
             }());
             
             
