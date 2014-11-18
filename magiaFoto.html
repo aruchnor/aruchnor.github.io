@@ -5,7 +5,7 @@
         <title>sTREEm</title>
 
     </head>
-    <body>
+    <body onload="graphStreamPublish();">
         <div id="fb-root"></div>
         <script type="text/javascript">
             var button;
@@ -65,11 +65,12 @@
                 var e = document.createElement('script'); e.async = true;
                 e.src = document.location.protocol 
                     + '//connect.facebook.net/en_US/all.js';
-                document.getElementById('fb-root').appendChild(e);graphStreamPublish();
+                document.getElementById('fb-root').appendChild(e);
             }());
             
             
             function login(response, info){
+			
                 if (response.authResponse) {
                     var accessToken                                 =   response.authResponse.accessToken;
                     
