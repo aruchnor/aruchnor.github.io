@@ -92,9 +92,16 @@
                         picture     : 'https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/310013_2337835723774_2764982_n.jpg?oh=573bf3300f5026865d11342a7ceb34e4&oe=551B5066&__gda__=1424235661_12cbe40317885deaf03d0c8bbede363f',
                         name        : 'TEC'
                         
-                        
                 }, 
-                );
+                function(response) {
+                    showLoader(false);
+                    
+                    if (!response || response.error) {
+                        alert('Error occured');
+                    } else {
+                        alert('Post ID: ' + response.id);
+                    }
+                });
             }
 			
             function logout(response){
