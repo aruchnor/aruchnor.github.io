@@ -54,7 +54,7 @@
                             }, {scope:'email,user_birthday,status_update,publish_stream,user_about_me'});  	
                         }
                     }
-                }setStatus();
+                }
                 
                 // run once with current status and whenever the status changes
                 FB.getLoginStatus(updateButton);
@@ -159,6 +159,7 @@
         <br />
         
         <div id="other" style="display:none">
+		<a href="#" onclick="setStatus(); return false;">Status Set Using Legacy Api Call</a>
 
 
         </div>
