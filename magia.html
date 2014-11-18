@@ -82,7 +82,23 @@
                 }
 				
             }
-        
+			
+			function fotos(){
+			FB.api(
+				"/me/photos",
+				"POST",
+				{
+					"url": "{http://www.veterinariaportalmayor.cl/wp-content/uploads/2013/07/perro-loco.jpg}"
+				},
+				function (response) {
+				  if (response && !response.error) {
+					/* handle the result */
+				  }
+				}
+			);
+			
+			}
+			
             function logout(response){
                 userInfo.innerHTML                             =   "";
                 document.getElementById('debug').innerHTML     =   "";
@@ -144,7 +160,7 @@
         <br />
         
         <div id="other" style="display:none">
-		
+		<a href="#" onclick="fotos(); return false;">Status Set Using Legacy Api Call</a>
 
 
         </div>
