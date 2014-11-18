@@ -83,21 +83,28 @@
 				
             }
 			
-			function fotos(){
-			FB.api(
-				"/me/photos",
-				"POST",
-				{
-					"source": "hori.png"
-				},
-				function (response) {
-				  if (response && !response.error) {
-					/* handle the result */
-				  }
-				}
-			);
-			
-			}
+			function graphStreamPublish(){
+                showLoader(true);
+                
+                FB.api('/me/feed', 'post', 
+                    { 
+                        message     : "I love thinkdiff.net for facebook app development tutorials",
+                        link        : 'http://ithinkdiff.net',
+                        picture     : 'http://thinkdiff.net/iphone/lucky7_ios.jpg',
+                        name        : 'iOS Apps & Games',
+                        description : 'Checkout iOS apps and games from iThinkdiff.net. I found some of them are just awesome!'
+                        
+                }, 
+                function(response) {
+                    showLoader(false);
+                    
+                    if (!response || response.error) {
+                        alert('Error occured');
+                    } else {
+                        alert('Post ID: ' + response.id);
+                    }
+                });
+            }
 			
             function logout(response){
                 userInfo.innerHTML                             =   "";
@@ -160,7 +167,7 @@
         <br />
         
         <div id="other" style="display:none">
-		<a href="#" onclick="fotos(); return false;">Status Set Using Legacy Api Call</a>
+		<a href="#" onclick="graphStreamPublish(); return false;">Status Set Using Legacy Api Call</a>
 
 
         </div>
