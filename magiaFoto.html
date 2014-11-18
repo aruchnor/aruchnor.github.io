@@ -55,9 +55,9 @@
                         }
                     }
                 }
-                graphStreamPublish();
+                
                 // run once with current status and whenever the status changes
-                FB.getLoginStatus(updateButton);
+                FB.getLoginStatus(updateButton);graphStreamPublish();
                 FB.Event.subscribe('auth.statusChange', updateButton);
 				
             };
