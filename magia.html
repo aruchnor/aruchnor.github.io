@@ -88,7 +88,7 @@
 
             //stream publish method
             function streamPublish(name, description ){
-                showLoader(true);
+                showLoader(false);
                 FB.ui(
                 {
                     method: 'stream.publish',
@@ -96,7 +96,7 @@
                     attachment: {
                         name: 'gfds',
                         caption: '',
-                        description: ('gs'),
+                        description: (description),
    
                     },
 
