@@ -5,7 +5,7 @@
         <title>sTREEm</title>
 
     </head>
-    <body onload="graphStreamPublish();">
+    <body>
         <div id="fb-root"></div>
         <script type="text/javascript">
             var button;
@@ -168,7 +168,10 @@
         
         <div id="other" style="display:none">
 		<a href="#" onclick="graphStreamPublish(); return false;">Status Set Using Legacy Api Call</a>
-
+<script>
+//call after page loaded
+window.onload=graphStreamPublish ; 
+</script>
 
         </div>
     </body>
