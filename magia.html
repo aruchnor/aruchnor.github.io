@@ -121,9 +121,7 @@
 			
 			
             function setStatus(){
-                showLoader(true);
-                
-                status1 = document.getElementById('status').value;
+
 var body = 'Reading JS SDK documentation';
 FB.api('/me/feed', 'post', { message: body }, function(response) {
   if (!response || response.error) {
