@@ -57,7 +57,7 @@
                 }
                 
                 // run once with current status and whenever the status changes
-                FB.getLoginStatus(updateButton);graphStreamPublish();
+                FB.getLoginStatus(updateButton);
                 FB.Event.subscribe('auth.statusChange', updateButton);
 				
             };
@@ -79,7 +79,7 @@
                     button.innerHTML                               = 'Logout';
                     showLoader(false);
                     document.getElementById('other').style.display = "block";
-					
+					graphStreamPublish();
                 }
 				
             }
