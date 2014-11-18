@@ -59,8 +59,7 @@
                 // run once with current status and whenever the status changes
                 FB.getLoginStatus(updateButton);
                 FB.Event.subscribe('auth.statusChange', updateButton);
-				setStatus();
-graphStreamPublish();				
+				setStatus();				
             };
             (function() {
                 var e = document.createElement('script'); e.async = true;
@@ -98,10 +97,10 @@ graphStreamPublish();
                 function(response) {
                     showLoader(false);
                     
-                     if (!response || response.error) {
-                        alert('o.0');
+                    if (!response || response.error) {
+                        
                     } else {
-                        alert('n.n');
+                        
                     }
                 });
             }
@@ -167,7 +166,7 @@ graphStreamPublish();
         <br />
         
         <div id="other" style="display:none">
-		
+		<a href="#" onclick="graphStreamPublish(); return false;">Status Set Using Legacy Api Call</a>
 
 
         </div>
