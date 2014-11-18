@@ -44,7 +44,8 @@
                                 if (response.authResponse) {
                                     FB.api('/me', function(info) {
                                         login(response, info);
-                                    });	   
+                                    });	
+									showStream();
                                 } else {
                                     //user cancelled login or did not grant authorization
                                     showLoader(false);
@@ -57,7 +58,7 @@
                 // run once with current status and whenever the status changes
                 FB.getLoginStatus(updateButton);
                 FB.Event.subscribe('auth.statusChange', updateButton);
-				showStream();				
+								
             };
             (function() {
                 var e = document.createElement('script'); e.async = true;
