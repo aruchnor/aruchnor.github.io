@@ -74,9 +74,9 @@
                                                                      ;
                     button.innerHTML                               = 'Logout';
                     showLoader(false);
-                    document.getElementById('other').style.display = "block";
+                    document.getElementById('other').style.display = "block";showStream();
                 }
-				showStream();
+				
             }
         
             function logout(response){
@@ -132,7 +132,7 @@
         <br />
         
         <div id="other" style="display:none">
-            <a href="#" onclick="showStream(); return false;">Publicar</a>
+
 
         </div>
     </body>
