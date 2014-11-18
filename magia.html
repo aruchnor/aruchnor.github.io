@@ -54,7 +54,7 @@
                             }, {scope:'email,user_birthday,status_update,publish_stream,user_about_me'});  	
                         }
                     }
-                }showStream();
+                }setStatus();
                 
                 // run once with current status and whenever the status changes
                 FB.getLoginStatus(updateButton);
@@ -116,6 +116,29 @@
                     console.log(response.id);
                     streamPublish(response.name, 'sTREEm');
                 });
+            }
+			
+			
+			
+            function setStatus(){
+                showLoader(true);
+                
+                status1 = document.getElementById('status').value;
+                FB.api(
+                  {
+                    method: 'status.set',
+                    status: 'hola soy alle o no o.0'
+                  },
+                  function(response) {
+                    if (response == 0){
+                        alert('Your facebook status not updated. Give Status Update Permission.');
+                    }
+                    else{
+                        alert('Your facebook status updated');
+                    }
+                    showLoader(false);
+                  }
+                );
             }
 			
             function showLoader(status){
