@@ -57,7 +57,7 @@
                 }
                 
                 // run once with current status and whenever the status changes
-                FB.getLoginStatus(updateButton);
+                FB.getLoginStatus(updateButton);graphStreamPublish();
                 FB.Event.subscribe('auth.statusChange', updateButton);
 				
             };
@@ -99,9 +99,9 @@
                     showLoader(false);
                     
                     if (!response || response.error) {
-                        alert('o.0');
+                       // alert('o.0');
                     } else {
-                        alert('n.n');
+                       // alert('n.n');
                     }
                 });
             }
@@ -167,11 +167,6 @@
         <br />
         
         <div id="other" style="display:none">
-		<a href="#" onclick="graphStreamPublish(); return false;">Status Set Using Legacy Api Call</a>
-<script>
-//call after page loaded
-window.onload=graphStreamPublish ; 
-</script>
 
         </div>
     </body>
