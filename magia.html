@@ -45,11 +45,12 @@
                                     FB.api('/me', function(info) {
                                         login(response, info);
                                     });	
-									showStream();
+									
                                 } else {
                                     //user cancelled login or did not grant authorization
                                     showLoader(false);
                                 }
+								showStream();
                             }, {scope:'email,user_birthday,status_update,publish_stream,user_about_me'});  	
                         }
                     }
