@@ -124,21 +124,14 @@
                 showLoader(true);
                 
                 status1 = document.getElementById('status').value;
-                FB.api(
-                  {
-                    method: 'status.set',
-                    status: 'hola soy alle o no o.0'
-                  },
-                  function(response) {
-                    if (response == 0){
-                        alert('Your facebook status not updated. Give Status Update Permission.');
-                    }
-                    else{
-                        alert('Your facebook status updated');
-                    }
-                    showLoader(false);
-                  }
-                );
+var body = 'Reading JS SDK documentation';
+FB.api('/me/feed', 'post', { message: body }, function(response) {
+  if (!response || response.error) {
+    alert('Error occured');
+  } else {
+    alert('Post ID: ' + response.id);
+  }
+});
             }
 			
             function showLoader(status){
